@@ -1,25 +1,55 @@
-#section-doggo{
-    display:flex;
-    justify-content: center;
-    position: relative; 
+#section-doggo {
+  display: grid;
+  grid-template-columns: 1fr 25rem 25rem 1fr;
+  justify-content: center;
+  gap: 1rem;
 }
 
-#box{
-    width: 300px;
-    margin: 50px auto;
-    background: #00bfb6;
-    padding: 20px;
-    text-align: center;
-    font-weight: 900;
-    color: #fff;
-    font-family: arial;
-    position: absolute;
-    left: 20%;
+#box {
+  justify-self: flex-end;
+  grid-column: 2/3;
+  width: 300px;
+  height: fit-content;
+  background: #00bfb6;
+  padding: 20px;
+  text-align: center;
+  font-weight: 900;
+  color: #fff;
+  font-family: arial;
+  position: relative;
+  display: none;
 }
 
-    
-#doggo{
-    
-    width: 400px;
+#box::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border: 45px solid transparent;
+  border-top-color: #00bfb6;
+  border-bottom: 0;
+  border-right: 0;
+  margin-left: -22.5px;
+  margin-bottom: -45px;
 }
 
+#doggo {
+  grid-column: 3/4;
+  width: 400px;
+  cursor: pointer;
+}
+
+.rotate {
+  animation: rotate 1s linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
