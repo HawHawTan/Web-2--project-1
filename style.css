@@ -23,3 +23,23 @@
     width: 400px;
 }
 
+/* Animate */
+#section-animate{
+    margin-top: 5rem;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+}
+
+
+#animate-text{
+    fill: white;
+    font-family: arial;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#animate-box{
+    fill: #00bfb6;
+}
