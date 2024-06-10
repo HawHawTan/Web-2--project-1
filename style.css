@@ -18,6 +18,7 @@
   font-family: arial;
   position: relative;
   display: none;
+
 }
 
 #box::after {
@@ -35,11 +36,32 @@
   margin-bottom: -45px;
 }
 
+/* Animate */
+#section-animate{
+    margin-top: 5rem;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+}
+
+
+#animate-text{
+    fill: white;
+    font-family: arial;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#animate-box{
+    fill: #00bfb6;
+}
 #doggo {
   grid-column: 3/4;
   width: 400px;
   cursor: pointer;
 }
+
 
 .rotate {
   animation: rotate 1s linear;
