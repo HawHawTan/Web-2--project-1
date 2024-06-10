@@ -18,6 +18,7 @@
   font-family: arial;
   position: relative;
   display: none;
+
 }
 
 #box::after {
@@ -60,6 +61,7 @@
   width: 400px;
   cursor: pointer;
 }
+
 
 .rotate {
   animation: rotate 1s linear;
