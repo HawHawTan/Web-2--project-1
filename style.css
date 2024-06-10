@@ -1,0 +1,25 @@
+#section-doggo{
+    display:flex;
+    justify-content: center;
+    position: relative; 
+}
+
+#box{
+    width: 300px;
+    margin: 50px auto;
+    background: #00bfb6;
+    padding: 20px;
+    text-align: center;
+    font-weight: 900;
+    color: #fff;
+    font-family: arial;
+    position: absolute;
+    left: 20%;
+}
+
+    
+#doggo{
+    
+    width: 400px;
+}
+
