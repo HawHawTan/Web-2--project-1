@@ -47,7 +47,7 @@
 #animate-text{
     fill: white;
     font-family: arial;
-    font-size: 20px;
+    font-size: 17px;
     text-align: center;
     font-weight: bold;
 }
@@ -55,6 +55,12 @@
 #animate-box{
     fill: #00bfb6;
 }
+
+#transform-box{
+  fill: #00bfb6;
+}
+/* Animate done */
+
 #doggo {
   grid-column: 3/4;
   width: 400px;
