@@ -1,51 +1,109 @@
+/* ------color codes----- */
+/* 
+-sidebar color: #00356B
+
+
+*/
+
+/* ------------------general styles----------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -------------------------Elements---------------------- */
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    grid-column: 1/-1;
+    background-color: #e5e4e2;
+}
+
+/* -------------------------Side bar Menu and the Main----------------- */
+.body-wrapper {
+    display: grid;
+    grid-template-columns: 18rem 1fr;
+    grid-template-rows: 1fr 5rem;
+}
+.side-bar {
+    border-right: 0.3rem solid #00356b;
+    padding-top: 1rem;
+    padding-left: 2rem;
+}
+
+.side-bar,
+main {
+    height: 44rem;
+}
+
+#logo {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* -----------------------SVG Usages Section------------ */
 #section-doggo {
-  display: grid;
-  grid-template-columns: 1fr 25rem 25rem 1fr;
-  justify-content: center;
-  gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 25rem 25rem 1fr;
+    justify-content: center;
+    gap: 1rem;
 }
 
 #box {
-  justify-self: flex-end;
-  grid-column: 2/3;
-  width: 300px;
-  height: fit-content;
-  background: #00bfb6;
-  padding: 20px;
-  text-align: center;
-  font-weight: 900;
-  color: #fff;
-  font-family: arial;
-  position: relative;
-  display: none;
-
+    justify-self: flex-end;
+    grid-column: 2/3;
+    width: 300px;
+    height: fit-content;
+    background: #00bfb6;
+    padding: 20px;
+    text-align: center;
+    font-weight: 900;
+    color: #fff;
+    font-family: arial;
+    position: relative;
+    display: none;
 }
 
 #box::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 0;
-  height: 0;
-  border: 45px solid transparent;
-  border-top-color: #00bfb6;
-  border-bottom: 0;
-  border-right: 0;
-  margin-left: -22.5px;
-  margin-bottom: -45px;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border: 45px solid transparent;
+    border-top-color: #00bfb6;
+    border-bottom: 0;
+    border-right: 0;
+    margin-left: -22.5px;
+    margin-bottom: -45px;
 }
 
 /* Animate */
-#section-animate{
+#section-animate {
     margin-top: 5rem;
     position: absolute;
     top: 40%;
     left: 30%;
 }
 
-
-#animate-text{
+#animate-text {
     fill: white;
     font-family: arial;
     font-size: 17px;
@@ -53,31 +111,30 @@
     font-weight: bold;
 }
 
-#animate-box{
+#animate-box {
     fill: #00bfb6;
 }
 
-#transform-box{
-  fill: #00bfb6;
+#transform-box {
+    fill: #00bfb6;
 }
 /* Animate done */
 
 #doggo {
-  grid-column: 3/4;
-  width: 400px;
-  cursor: pointer;
+    grid-column: 3/4;
+    width: 400px;
+    cursor: pointer;
 }
 
-
 .rotate {
-  animation: rotate 1s linear;
+    animation: rotate 1s linear;
 }
 
 @keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
