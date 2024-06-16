@@ -4,7 +4,9 @@
 
 
 */
-
+:root{
+    --sidebar-color :#00356B; 
+}
 /* ------------------general styles----------------- */
 * {
     margin: 0;
