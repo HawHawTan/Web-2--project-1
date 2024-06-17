@@ -102,21 +102,32 @@ main {
   padding-left: 1rem;
 }
 
-#section-transform h2{
+#transform-title{
+    background-color: #00bfb6;
+    width: 150px;
+    color: white;
+    font-family: verdana;
+    font-weight: bold;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+#transform-text{
   background-color: #00bfb6;
-  width: 200px;
-  text-align: center;
+  width: 500px;
   color: white;
   font-family: arial;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;.
+  line-height: 1.25;
+  
+  
 }
-
-#transform-p{
-  width: 500px;
-  border: #00bfb6 solid 3px;
-}
-
 
 #section-animate {
     margin-top: 5rem;
@@ -129,8 +140,22 @@ main {
 #animate-text {
     fill: white;
     font-family: arial;
-    text-align: center;
+    text-align: center; 
     font-weight: bold;
+    font-size: 17px;
+}
+
+#section-animate p{
+    border: #00bfb6 solid 3px;
+    margin-right: 1rem;
+    background-color: #00bfb6;
+    line-height: 1.25;
+    width: 400px;
+    color: white;
+    font-family: arial;
+    font-weight: bold;
+    width: auto;
+    font-size: 15px;
 }
 
 #animate-box {
@@ -141,10 +166,7 @@ main {
     fill: #00bfb6;
 }
 
-#motion-p{
-  border: #00bfb6 solid 3px;
-  text-align: left;
-}
+
 /* Animate done */
 
 #doggo {
