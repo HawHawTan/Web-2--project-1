@@ -142,7 +142,7 @@
               <text
                 x="50"
                 y="50"
-                style="font-family: Verdana; font-size: 32"
+                style="font-family: Verdana; font-size: 17"
                 id="animate-text"
               >
                 animateMotion
@@ -154,8 +154,15 @@
                 />
               </text>
             </svg>
+            <p id="motion-p">The animateMotion element sets how an element moves along a motion path.<br>
+
+              The animateMotion element should be nested inside the target element.<br>
+              
+              In this example, we create a rectangle and a text. Both elements have an animateMotion element with the same path:</p>
           </section>
+
           <section id="section-transform">
+            <h2>animateTransform</h2>
             <svg width="200" height="180" xmlns="http://www.w3.org/2000/svg">
               <rect x="30" y="30" height="110" width="110" id="transform-box">
                 <animateTransform
@@ -169,7 +176,15 @@
                 />
               </rect>
             </svg>
+            <p id="transform-p">The <animateTransform> element animates the transform attribute on the target element.
+
+              The animateTransform element should be nested inside the target element.
+              
+              In this example, we create a rectangle that will rotate:
+              
+              </p>
           </section>
+
         </section>
         <section class="section svg-usages" id="svg-usages">
         </section>

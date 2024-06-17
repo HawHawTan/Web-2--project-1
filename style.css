@@ -98,17 +98,37 @@ main {
 }
 
 /* Animate */
+#section-transform{
+  padding-left: 1rem;
+}
+
+#section-transform h2{
+  background-color: #00bfb6;
+  width: 200px;
+  text-align: center;
+  color: white;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#transform-p{
+  width: 500px;
+  border: #00bfb6 solid 3px;
+}
+
+
 #section-animate {
     margin-top: 5rem;
     position: absolute;
     top: 40%;
     left: 30%;
+    padding-left: 40rem;
 }
 
 #animate-text {
     fill: white;
     font-family: arial;
-    font-size: 17px;
     text-align: center;
     font-weight: bold;
 }
@@ -119,6 +139,11 @@ main {
 
 #transform-box {
     fill: #00bfb6;
+}
+
+#motion-p{
+  border: #00bfb6 solid 3px;
+  text-align: left;
 }
 /* Animate done */
 
