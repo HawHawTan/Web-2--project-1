@@ -2,15 +2,16 @@ const doggo = document.getElementById("doggo");
 const move = document.getElementsByClassName("doggo");
 const box = document.getElementById("box");
 const li = document.querySelectorAll("nav ul li a")
+let myAudio = document.querySelector('#audio')
 let onOrOff = false;
 
 doggo.addEventListener("click", () => {
     console.log("woof woof");
+    myAudio.play()
     box.style.display = "block";
     if (onOrOff) {
         box.style.display = "none";
         onOrOff = false;
-        console.log(onOrOff);
         return;
     }
     onOrOff = true;
