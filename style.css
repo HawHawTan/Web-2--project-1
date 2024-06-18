@@ -35,6 +35,13 @@ footer {
     background-color: #e5e4e2;
 }
 
+.highlight {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0.5rem 2rem;
+  }
+
+
 /* -------------------------Side bar Menu and the Main----------------- */
 .body-wrapper {
     display: grid;
