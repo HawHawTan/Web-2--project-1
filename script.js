@@ -1,6 +1,7 @@
 const doggo = document.getElementById("doggo");
 const move = document.getElementsByClassName("doggo");
 const box = document.getElementById("box");
+const li = document.querySelectorAll("nav ul li a")
 let onOrOff = false;
 
 doggo.addEventListener("click", () => {
@@ -22,3 +23,12 @@ doggo.addEventListener("dblclick", () => {
         doggo.classList.remove("rotate");
     }, 2000);
 });
+
+li.forEach((node)=>{
+    node.addEventListener("click", ()=>{
+        li.forEach((liNode) => {
+            liNode.classList.remove("highlight");
+        });
+        node.className = "highlight"
+    })
+})
