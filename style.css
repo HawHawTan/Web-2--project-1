@@ -4,8 +4,8 @@
 
 
 */
-:root{
-    --sidebar-color :#00356B; 
+:root {
+    --sidebar-color: #00356b;
 }
 /* ------------------general styles----------------- */
 * {
@@ -15,7 +15,10 @@
 }
 
 /* -------------------------Elements---------------------- */
-
+body {
+    font-family: "Mulish", sans-serif;
+    line-height: 1.5;
+}
 ul {
     list-style: none;
 }
@@ -31,15 +34,21 @@ a {
 
 footer {
     text-align: center;
-    grid-column: 1/-1;
+
     background-color: #e5e4e2;
+}
+
+.highlight {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0.5rem 2rem;
 }
 
 /* -------------------------Side bar Menu and the Main----------------- */
 .body-wrapper {
     display: grid;
     grid-template-columns: 18rem 1fr;
-    grid-template-rows: 1fr 5rem;
+    grid-template-rows: 1fr 7rem;
 }
 .side-bar {
     border-right: 0.3rem solid #00356b;
@@ -98,31 +107,31 @@ main {
 }
 
 /* Animate */
-#section-transform{
-  padding-left: 1rem;
+#section-transform {
+    padding-left: 1rem;
 }
 
-#section-transform h2{
-  background-color: #00bfb6;
-  width: 200px;
-  text-align: center;
-  color: white;
-  font-family: arial;
-  font-weight: bold;
-  font-size: 20px;
+#section-transform h2 {
+    background-color: #00bfb6;
+    width: 200px;
+    text-align: center;
+    color: white;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 20px;
 }
 
-#transform-p{
-  width: 500px;
-  border: #00bfb6 solid 3px;
+#transform-p {
+    width: 500px;
+    border: #00bfb6 solid 3px;
 }
-
-
+#animation {
+    position: relative;
+}
 #section-animate {
     margin-top: 5rem;
     position: absolute;
     top: 40%;
-    left: 30%;
     padding-left: 40rem;
 }
 
@@ -131,6 +140,20 @@ main {
     font-family: arial;
     text-align: center;
     font-weight: bold;
+    font-size: 17px;
+}
+
+#section-animate p {
+    border: #00bfb6 solid 3px;
+    margin-right: 1rem;
+    background-color: #00bfb6;
+    line-height: 1.25;
+    width: 400px;
+    color: white;
+    font-family: arial;
+    font-weight: bold;
+    width: auto;
+    font-size: 15px;
 }
 
 #animate-box {
@@ -141,9 +164,9 @@ main {
     fill: #00bfb6;
 }
 
-#motion-p{
-  border: #00bfb6 solid 3px;
-  text-align: left;
+#motion-p {
+    border: #00bfb6 solid 3px;
+    text-align: left;
 }
 /* Animate done */
 
