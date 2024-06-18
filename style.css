@@ -4,8 +4,8 @@
 
 
 */
-:root{
-    --sidebar-color :#00356B; 
+:root {
+    --sidebar-color: #00356b;
 }
 /* ------------------general styles----------------- */
 * {
@@ -15,7 +15,10 @@
 }
 
 /* -------------------------Elements---------------------- */
-
+body {
+    font-family: "Mulish", sans-serif;
+    line-height: 1.5;
+}
 ul {
     list-style: none;
 }
@@ -31,7 +34,7 @@ a {
 
 footer {
     text-align: center;
-    grid-column: 1/-1;
+
     background-color: #e5e4e2;
 }
 
@@ -39,14 +42,13 @@ footer {
     border: 1px solid black;
     border-radius: 10px;
     padding: 0.5rem 2rem;
-  }
-
+}
 
 /* -------------------------Side bar Menu and the Main----------------- */
 .body-wrapper {
     display: grid;
     grid-template-columns: 18rem 1fr;
-    grid-template-rows: 1fr 5rem;
+    grid-template-rows: 1fr 7rem;
 }
 .side-bar {
     border-right: 0.3rem solid #00356b;
@@ -105,54 +107,43 @@ main {
 }
 
 /* Animate */
-#section-transform{
-  padding-left: 1rem;
+#section-transform {
+    padding-left: 1rem;
 }
 
-#transform-title{
+#section-transform h2 {
     background-color: #00bfb6;
-    width: 150px;
-    color: white;
-    font-family: verdana;
-    font-weight: bold;
-    padding-bottom: 8px;
-    padding-top: 8px;
-    font-size: 14px;
+    width: 200px;
     text-align: center;
+    color: white;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 20px;
 }
 
-
-#transform-text{
-  background-color: #00bfb6;
-  width: 500px;
-  color: white;
-  font-family: arial;
-  font-weight: bold;
-  font-size: 15px;
-  padding-top: 8px;
-  padding-bottom: 8px;.
-  line-height: 1.25;
-  
-  
+#transform-p {
+    width: 500px;
+    border: #00bfb6 solid 3px;
 }
-
+#animation {
+    position: relative;
+}
 #section-animate {
     margin-top: 5rem;
     position: absolute;
     top: 40%;
-    left: 30%;
     padding-left: 40rem;
 }
 
 #animate-text {
     fill: white;
     font-family: arial;
-    text-align: center; 
+    text-align: center;
     font-weight: bold;
     font-size: 17px;
 }
 
-#section-animate p{
+#section-animate p {
     border: #00bfb6 solid 3px;
     margin-right: 1rem;
     background-color: #00bfb6;
@@ -173,7 +164,10 @@ main {
     fill: #00bfb6;
 }
 
-
+#motion-p {
+    border: #00bfb6 solid 3px;
+    text-align: left;
+}
 /* Animate done */
 
 #doggo {
