@@ -1,13 +1,12 @@
 const doggo = document.getElementById("doggo");
 const move = document.getElementsByClassName("doggo");
 const box = document.getElementById("box");
-const li = document.querySelectorAll("nav ul li a")
-let myAudio = document.querySelector('#audio')
+let myAudio = document.querySelector("#audio");
 let onOrOff = false;
 
 doggo.addEventListener("click", () => {
     console.log("woof woof");
-    myAudio.play()
+    myAudio.play();
     box.style.display = "block";
     if (onOrOff) {
         box.style.display = "none";
@@ -25,11 +24,38 @@ doggo.addEventListener("dblclick", () => {
     }, 2000);
 });
 
-li.forEach((node)=>{
-    node.addEventListener("click", ()=>{
-        li.forEach((liNode) => {
-            liNode.classList.remove("highlight");
-        });
-        node.className = "highlight"
-    })
-})
+//grab elements
+const menuElem = document.querySelector(".hamburger-menu");
+const closeMenuElem = document.querySelector(".close-menu");
+const navigationElem = document.querySelector(".nav-list");
+const navigationLinks = document.querySelectorAll(".menu-link");
+const mediaQuery = window.matchMedia("(min-width:46.8em)");
+
+menuElem.addEventListener("click", () => {
+    navigationElem.style.display = "block";
+    closeMenuElem.style.display = "block";
+    menuElem.style.display = "none";
+});
+
+closeMenuElem.addEventListener("click", () => {
+    navigationElem.style.display = "none";
+    menuElem.style.display = "block";
+    closeMenuElem.style.display = "none";
+});
+
+navigationLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+        if (mediaQuery.matches) {
+            navigationElem.style.display = "block";
+            closeMenuElem.style.display = "block";
+            navigationLinks.forEach((a) => {
+                a.classList.remove("active");
+            });
+            link.classList.add("active");
+        } else {
+            navigationElem.style.display = "none";
+            menuElem.style.display = "block";
+            closeMenuElem.style.display = "none";
+        }
+    });
+});
