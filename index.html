@@ -1,197 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
-      rel="stylesheet"
-    />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="script.js"></script>
-  </head>
-  <body>
-    <div class="body-wrapper">
-      <section class="side-bar">
-        <img src="media/logo.png" alt="svg logo" id="logo" />
-        <nav>
-          <ul>
-            <li>
-              <a href="#svg-intro" class="menu-link">What are SVGs?</a>
-            </li>
-            <li>
-              <a href="#svg-pros-cons" class="menu-link">Why use SVGs</a>
-            </li>
-            <li>
-              <a href="#svg-capabilities" class="menu-link">What do SVGs do?</a>
-            </li>
-            <li>
-              <a href="#svg-usages" class="menu-link">Where to use SVGs?</a>
-            </li>
-            <li>
-              <a href="#svg-credits" class="menu-link">Credits & References</a>
-            </li>
-          </ul>
-        </nav>
-      </section>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+            rel="stylesheet"
+        />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <div class="body-wrapper">
+            <section class="side-bar">
+                <img src="media/logo.png" alt="svg logo" id="logo" />
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#svg-intro" class="menu-link"
+                                >What are SVGs?</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#svg-pros-cons" class="menu-link"
+                                >Why use SVGs</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#svg-capabilities" class="menu-link"
+                                >What do SVGs do?</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#svg-usages" class="menu-link"
+                                >Where to use SVGs?</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#svg-credits" class="menu-link"
+                                >Credits & References</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </section>
 
-      <main>
-        <h1>SVG Compelete Guide for Developers</h1>
-        <section class="section svg-intro" id="svg-intro">
-          <article>
-            <h2>What are SVGs?</h2>
-            <p>
-              SVGs, or Scalable Vector Graphics, are one of the two main types
-              of graphics found on the web, alongside raster graphics. Vector
-              graphics are composed of mathematical equations, curves, and
-              lines, making them smaller in file size and maintaining quality
-              when scaled. This characteristic gives vector graphics specific
-              use cases where precision and scalability are essential. In
-              contrast, raster graphics are made up of pixels, resulting in
-              larger file sizes and potential loss of quality when resized.
-              <br />XML markup language is the format used for writing SVG
-              files, enabling data storage and transfer. SVGs are essentially
-              human-readable text files, allowing easy comprehension. Moreover,
-              this characteristic enables search engines, such as Google, to
-              interpret SVG graphics and identify keywords, potentially
-              contributing to improved search rankings for a website.
-            </p>
-          </article>
-          <article>
-            <h2>History of SVGs</h2>
-            <p>
-              SVGs have been around since 1999, developed by the World Wide Web
-              Consortium (W3C). Initially, SVG adoption was slow due to
-              compatibility issues, limiting its use among developers. However,
-              around 2014, browsers such as Safari, Mozilla Firefox, and others
-              began to offer better support for SVG files, leading to increased
-              adoption and popularity.
-            </p>
-            <figure>
-              <img
-                src="media/svg-support.png"
-                alt="browsers support for svg files"
-              />
-              <figcaption>
-                <a href="https://caniuse.com/?search=svg">Can I Use Website</a>
-              </figcaption>
-            </figure>
-          </article>
-        </section>
-        <section class="section svg-pros-cons" id="svg-pros-cons">
-          <article class="advantages">
-            <h2>Advantages of SVGs</h2>
-            <section>
-              <h3>smaller file size</h3>
-              <p>
-                SVGs are made up of mathematical equations that define the
-                shapes and lines within the graphic. These equations describe
-                the position, size, and curves of each element in the image.
-                Unlike raster graphics, which are made up of individual pixels,
-                SVGs use these mathematical formulas to render images.
-              </p>
-              <p>
-                Because SVG files are essentially text files containing these
-                mathematical equations and other instructions, they tend to be
-                much smaller in size compared to raster graphics like PNG and
-                JPEG.As a result, SVGs are ideal for use on the web, where
-                smaller file sizes lead to faster loading times and better
-                performance.
-              </p>
-              <figure>
-                <img src="" alt="" />
-                <figcaption></figcaption>
-              </figure>
-            </section>
-            <section>
-              <h3>preserve image quality</h3>
-              <p>
-                The SVG file format is flexible and is especially suitable for
-                images that need to be scaled without losing quality.
-                Mathematical equations are used in this format to describe the
-                shapes and lines in the image, allowing it to be adjusted to any
-                size while still preserving sharpness and clarity. In contrast,
-                raster graphics, such as JPEGs or PNGs, lose quality when
-                resized, which makes them less suitable for scalable
-                applications.
-              </p>
-              <figure>
-                <img
-                  src="media/svg-quality.png"
-                  alt="difference between raster graphics and vector graphics"
-                />
-                <figcaption>
-                  <a
-                    href="https://www.vexels.com/blog/getting-started-guide-to-vexels-graphics/"
-                    >Vexels</a
-                  >
-                </figcaption>
-              </figure>
-            </section>
-            <section>
-              <h3>embedding into HTML</h3>
-              <p>
-                One of the significant advantages of SVGs is their ability to be
-                easily embedded into HTML. This allows for seamless integration
-                into web pages and enables extensive customization through CSS.
-                By embedding SVGs directly into HTML, you can use CSS to style
-                them just like any other HTML element. This includes changing
-                colors, applying gradients, adding shadows, and creating
-                animations. This flexibility makes SVGs a powerful tool for web
-                designers to control the appearance and behavior of graphics on
-                a webpage.
-              </p>
-            </section>
-          </article>
-          <article class="disadvantages">
-            <h2>SVG Limitations</h2>
-            <section>
-              <h3>Old Browser Compatibility</h3>
-              <p>
-                While modern browsers fully support SVGs, older browsers may not
-                render them correctly or at all. This lack of compatibility can
-                be an issue for users who still rely on outdated software,
-                potentially limiting the audience that can view the SVG content
-                as intended.
-              </p>
-            </section>
-            <section>
-              <h3>Complex Code</h3>
-              <p>
-                Creating and editing SVG files can become complex, especially
-                for detailed graphics. The XML code can be lengthy and difficult
-                to manage, particularly when manually editing or debugging the
-                file.
-              </p>
-            </section>
-            <section>
-              <h3>Not suitable for realistic images</h3>
-              <p>
-                SVGs are ideal for illustrations, icons, and logos but are not
-                well-suited for realistic images such as photographs. Because
-                they are based on vectors, they are unable to replicate the
-                complexities and specifics of actual scenes, which limits their
-                effectiveness for photorealistic representations.
-              </p>
-            </section>
-            <section>
-              <h3>Lacks support for describing 3D objects</h3>
-              <p>
-                SVGs are designed for 2D graphics and do not have the
-                capabilities to describe or render 3D objects. They cannot
-                represent depth, perspective, or the complexity of
-                three-dimensional shapes, making them unsuitable for
-                applications requiring 3D graphics.
-              </p>
-            </section>
-          </article>
-        </section>
-        <section class="section svg-capabilities" id="svg-capabilities">
-          <h2>What do SVGs do?</h2>
-          <p></p>
+            <main>
+                <h1>SVG Compelete Guide for Developers</h1>
+                <section class="section svg-intro" id="svg-intro">
+                    <article>
+                        <h2>What are SVGs?</h2>
+                        <p>
+                            SVGs or scalable vector graphics are made of
+                            mathematical equations containing curves and lines.
+                            This structure makes vector graphics suitable for
+                            use cases where scalability and clarity are
+                            necessary. On the other hand, there is a second type
+                            of graphics on the web called raster graphics such
+                            as PNG and JPEG are made of up pixels, resulting in
+                            larger file sizes and potential loss of quality if
+                            resized. The format used for writing SVG files is
+                            XML which is a markup language. XML enables you to
+                            store data and transfer it easily. So SVGs are
+                            human-readable text files and are different from
+                            bitmaps that are made of pixels.
+                        </p>
+                    </article>
+                    <article>
+                        <h2>History of SVGs</h2>
+                        <p>
+                            SVGs have been around since 1999 and were first
+                            developed by World Wide Web Consortium (W3C). For a
+                            long time, they were not adopted due to
+                            compatibility issues however, around 2014 browsers
+                            such as Mozilla, Firefox, and Safari offered better
+                            support for SVG files which led to increased
+                            adoption and popularity.
+                        </p>
+                        <figure>
+                            <img
+                                src="media/svg-support.png"
+                                alt="browsers support for svg files"
+                            />
+                            <figcaption>
+                                <a href="https://caniuse.com/?search=svg"
+                                    >Can I Use Website</a
+                                >
+                            </figcaption>
+                        </figure>
+                    </article>
+                </section>
+                <section class="section svg-pros-cons" id="svg-pros-cons">
+                    <article class="advantages">
+                        <h2>Advantages of SVGs</h2>
+                        <section>
+                            <h3>smaller file size</h3>
+                            <p>
+                                The shapes and lines in SVGs are defined by
+                                mathematical equations, which specify the
+                                position, size, and curves of each element in
+                                the graphic. Unlike raster graphics that are
+                                made of pixels, SVGs uses these mathematical
+                                formulas for image rendering. Since SVG files
+                                are basically text files containing these
+                                mathematical equations and other directives,
+                                they are generally much smaller in size compared
+                                to raster graphics such as PNG and JPEG. This
+                                makes SVGs perfect for web use, as smaller file
+                                sizes result in quicker loading times and
+                                improved performance.
+                            </p>
+
+                            <figure>
+                                <img src="" alt="" />
+                                <figcaption></figcaption>
+                            </figure>
+                        </section>
+                        <section>
+                            <h3>preserve image quality</h3>
+                            <p>
+                                One of the advantages of the SVG file format is
+                                that because of its structure, it maintains the
+                                quality when scaling up or down. SVG file format
+                                is made of shapes and lines that describe the
+                                image and allow it to be adjusted to different
+                                sizes while preserving clarity and sharpness.
+                                However, raster graphics such sc JPEGs or PNGs
+                                can easily lose quality when resized, making
+                                them less suitable for scalable applications.
+                            </p>
+                            <figure>
+                                <img
+                                    src="media/svg-quality.png"
+                                    alt="difference between raster graphics and vector graphics"
+                                />
+                                <figcaption>
+                                    <a
+                                        href="https://www.vexels.com/blog/getting-started-guide-to-vexels-graphics/"
+                                        >Vexels</a
+                                    >
+                                </figcaption>
+                            </figure>
+                        </section>
+                        <section>
+                            <h3>embedding into HTML</h3>
+                            <p>
+                                The ability to be embedded into HTML is one of
+                                the benefits of using SVG file format. This
+                                allows directly integrating SVGS into web pages
+                                and the ability to customize the style using
+                                CSS. By embedding SVGs directly into HTML they
+                                behave the same as the other HTML elements and
+                                can be styled, for instance, the color,
+                                gradients, or strokes can be easily added to
+                                SVG. All of these features make SVGS a powerful
+                                tool for web developers and designers to control
+                                the appearance of the graphics on the web.
+                            </p>
+                        </section>
+                    </article>
+                    <article class="disadvantages">
+                        <h2>SVG Limitations</h2>
+                        <section>
+                            <h3>Compatibility with older browsers</h3>
+                            <p>
+                                Although SVGs are well-supported by modern
+                                browsers there are still some old browsers that
+                                don’t fully support this file format. This lack
+                                of compatibility can make a bad user experience
+                                for those who depend on outdated software and
+                                browsers, leading to limiting the audience from
+                                accessing the SVG content.
+                            </p>
+                        </section>
+                        <section>
+                            <h3>Code Complexity</h3>
+                            <p>
+                                Creating and modifying detailed graphics with
+                                SVG files can be tough sometimes, especially due
+                                to the extensive and challenging XML code that
+                                can be difficult to handle, particularly when
+                                manually editing or debugging the file.
+                            </p>
+                        </section>
+                        <section>
+                            <h3>Not suitable for realistic images</h3>
+                            <p>
+                                SVGs are good to be used for icons and
+                                illustrations but not for complex images like
+                                photographs. Because they are based on vectors,
+                                they are unable to replicate the complexities
+                                and specifics of actual scenes, which limits
+                                their effectiveness for photorealistic
+                                representations.
+                            </p>
+                        </section>
+                        <section>
+                            <h3>Lacks support for describing 3D objects</h3>
+                            <p>
+                                SVGs are designed for 2D graphics and do not
+                                have the capabilities to describe or render 3D
+                                objects. They cannot represent depth,
+                                perspective, or the complexity of
+                                three-dimensional shapes, making them unsuitable
+                                for applications requiring 3D graphics.
+                            </p>
+                        </section>
+                    </article>
+                </section>
+                <section class="section svg-capabilities" id="svg-capabilities">
+                    <h2>What do SVGs do?</h2>
+                    <p></p>
           <!-- Doggo -->
           <section id="section-doggo">
             <h3>Interactive SVG</h3>
@@ -311,120 +333,147 @@
               />
             </svg>
           </section>
-          <!-- Animation -->
-          <section id="animation">
-            <h3>Animations</h3>
-            <p></p>
-            <article id="section-animate">
-              <h4></h4>
-              <svg width="100%" height="150" xmlns="http://www.w3.org/2000/svg">
-                <rect x="45" y="18" width="155" height="45" id="animate-box">
-                  <animateMotion
-                    path="M0,0 q60,100 100,0 q60,-20 100,0"
-                    begin="0s"
-                    dur="10s"
-                    repeatCount="indefinite"
-                  />
-                </rect>
-                <text
-                  x="50"
-                  y="50"
-                  style="font-family: Verdana; font-size: 32"
-                  id="animate-text"
-                >
-                  animateMotion
-                  <animateMotion
-                    path="M0,0 q60,100 100,0 q60,-20 100,0"
-                    begin="0s"
-                    dur="10s"
-                    repeatCount="indefinite"
-                  />
-                </text>
-              </svg>
-              <p>
-                The animateMotion element sets how an element moves along a
-                motion path. The animateMotion element should be nested inside
-                the target element. In this example, we create a rectangle and
-                text. Both elements have an animateMotion element with the same
-                path.
-              </p>
-            </article>
-            <article id="section-transform">
-              <h4></h4>
-              <svg width="200" height="180" xmlns="http://www.w3.org/2000/svg">
-                <rect x="30" y="30" height="110" width="110" id="transform-box">
-                  <animateTransform
-                    attributeName="transform"
-                    begin="0s"
-                    dur="10s"
-                    type="rotate"
-                    from="0 85 85"
-                    to="360 85 85"
-                    repeatCount="indefinite"
-                  />
-                </rect>
-              </svg>
-              <p id="transform-p">
-                The animateTransform element animates the transform attribute on
-                the target element. The animateTransform element should be
-                nested inside the target element. In this example, we create a
-                square that will rotate.
-              </p>
-            </article>
-          </section>
-        </section>
-        <section class="section svg-usages" id="svg-usages">
-          <h2>Where would SVGs be used?</h2>
-          <ul>
-            <li>Logo Design</li>
-            <ul>
-              <li>
-                They maintain sharpness regardless of the size
-                <ul>
-                  <li>website</li>
-                  <li>Social Media</li>
-                  <li>Print Materials</li>
-                </ul>
-              </li>
-            </ul>
-            <li>
-              Diagram and Illustrations
-              <ul>
-                <li>Their vector are easy to resize without losing quality</li>
-              </ul>
-            </li>
-            <li>
-              Animated Element
-              <ul>
-                <li>
-                  Using CSS, you can make simple animations that adds
-                  interactive to the website
-                </li>
-              </ul>
-            </li>
-            <li>
-              Charts and Graphs
-              <ul>
-                <li>
-                  Able to create scalable and animate design for charts and
-                  graph
-                </li>
-              </ul>
-            </li>
-            <li>
-              Web Design
-              <ul>
-                <li>
-                  Mostly use for icons,buttons and navigation bars and they’re
-                  also faster in page load times compare to PNGs or JPEGs
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </section>
-        <section class="section svg-credits" id="svg-credits"></section>
-      </main>
-      <footer><p>Copyright 2024</p></footer>
-    </div>
-  </body>
+                    <!-- Animation -->
+                    <section id="animation">
+                        <h3>Animations</h3>
+                        <p></p>
+                        <article id="section-animate">
+                            <h4></h4>
+                            <svg
+                                width="100%"
+                                height="150"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <rect
+                                    x="45"
+                                    y="18"
+                                    width="155"
+                                    height="45"
+                                    id="animate-box"
+                                >
+                                    <animateMotion
+                                        path="M0,0 q60,100 100,0 q60,-20 100,0"
+                                        begin="0s"
+                                        dur="10s"
+                                        repeatCount="indefinite"
+                                    />
+                                </rect>
+                                <text
+                                    x="50"
+                                    y="50"
+                                    style="font-family: Verdana; font-size: 32"
+                                    id="animate-text"
+                                >
+                                    animateMotion
+                                    <animateMotion
+                                        path="M0,0 q60,100 100,0 q60,-20 100,0"
+                                        begin="0s"
+                                        dur="10s"
+                                        repeatCount="indefinite"
+                                    />
+                                </text>
+                            </svg>
+                            <p>
+                                The animateMotion element sets how an element
+                                moves along a motion path. The animateMotion
+                                element should be nested inside the target
+                                element. In this example, we create a rectangle
+                                and text. Both elements have an animateMotion
+                                element with the same path.
+                            </p>
+                        </article>
+                        <article id="section-transform">
+                            <h4></h4>
+                            <svg
+                                width="200"
+                                height="180"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <rect
+                                    x="30"
+                                    y="30"
+                                    height="110"
+                                    width="110"
+                                    id="transform-box"
+                                >
+                                    <animateTransform
+                                        attributeName="transform"
+                                        begin="0s"
+                                        dur="10s"
+                                        type="rotate"
+                                        from="0 85 85"
+                                        to="360 85 85"
+                                        repeatCount="indefinite"
+                                    />
+                                </rect>
+                            </svg>
+                            <p id="transform-p">
+                                The animateTransform element animates the
+                                transform attribute on the target element. The
+                                animateTransform element should be nested inside
+                                the target element. In this example, we create a
+                                square that will rotate.
+                            </p>
+                        </article>
+                    </section>
+                </section>
+                <section class="section svg-usages" id="svg-usages">
+                    <h2>Where would SVGs be used?</h2>
+
+                    <ul>
+                        <li>Logo Design</li>
+                        <ul>
+                            <li>
+                                They maintain sharpness regardless of the size
+                                <ul>
+                                    <li>website</li>
+                                    <li>Social Media</li>
+                                    <li>Print Materials</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <li>
+                            Diagram and Illustrations
+                            <ul>
+                                <li>
+                                    Their vector are easy to resize without
+                                    losing quality
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Animated Element
+                            <ul>
+                                <li>
+                                    Using CSS, you can make simple animations
+                                    that adds interactive to the website
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Charts and Graphs
+                            <ul>
+                                <li>
+                                    Able to create scalable and animate design
+                                    for charts and graph
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Web Design
+                            <ul>
+                                <li>
+                                    Mostly use for icons,buttons and navigation
+                                    bars and they’re also faster in page load
+                                    times compare to PNGs or JPEGs
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section class="section svg-credits" id="svg-credits"></section>
+            </main>
+            <footer><p>Copyright 2024</p></footer>
+        </div>
+    </body>
 </html>
