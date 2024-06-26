@@ -1,27 +1,30 @@
 const doggo = document.getElementById("doggo");
-const move = document.getElementsByClassName("doggo");
 const box = document.getElementById("box");
-let myAudio = document.querySelector("#audio");
+let bark = document.querySelector("#audio");
 let onOrOff = false;
 
 doggo.addEventListener("click", () => {
-    console.log("woof woof");
-    myAudio.play();
-    box.style.display = "block";
     if (onOrOff) {
-        box.style.display = "none";
         onOrOff = false;
-        return;
+        // this was added
+        doggo.classList.remove("scale");
+        box.style.display = "none";
     }
-    onOrOff = true;
+    // this was added
+    else {
+        bark.play();
+        // this was added
+        doggo.classList.add("scale");
+        box.style.display = "block";
+        onOrOff = true;
+    }
 });
 
 doggo.addEventListener("dblclick", () => {
-    console.log("db");
     doggo.classList.add("rotate");
     setTimeout(function () {
         doggo.classList.remove("rotate");
-    }, 2000);
+    }, 1000);
 });
 
 //grab elements
