@@ -274,7 +274,7 @@ footer p {
 /* ---------------------main----------------- */ /* -----------------------SVG Usages Section------------ */
 
 #box {
-    justify-self: flex-end;
+    /* justify-self: flex-end; */
     /* this was change */
     grid-column: 2/3;
     width: 7rem;
@@ -322,7 +322,9 @@ footer p {
 .interactive-doggo {
     display: grid;
     /* this was change */
-    grid-template-columns: 1fr 10px 10rem 1fr;
+    /* grid-template-columns: 1fr 10px 10rem 1fr; */
+    grid-template-columns: 1fr 5rem;
+    grid-template-rows: 1fr 1fr;
     align-content: center;
     height: 80%;
 }
@@ -338,6 +340,7 @@ footer p {
 #doggo {
     /* this was change */
     grid-column: 3/4;
+    grid-row: 2/-2;
     width: 200px;
     cursor: pointer;
     scale: 0.5;
