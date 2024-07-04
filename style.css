@@ -22,7 +22,6 @@ body {
 h1 {
     font-size: 1.5rem;
     text-align: center;
-    margin-bottom: 3rem;
 }
 
 h2 {
@@ -115,6 +114,7 @@ footer p {
         font-size: 2.5rem;
         font-weight: 600;
         margin-top: 2rem;
+        margin-bottom: 3rem;
     }
     h2 {
         font-size: 2rem;
@@ -274,8 +274,6 @@ footer p {
 /* ---------------------main----------------- */ /* -----------------------SVG Usages Section------------ */
 
 #box {
-    /* justify-self: flex-end; */
-    /* this was change */
     grid-column: 2/3;
     width: 7rem;
     height: fit-content;
@@ -315,36 +313,30 @@ footer p {
     fill: #00356b;
 }
 
-#transform-box {
+.transform-box {
     fill: #00356b;
 }
 
 .interactive-doggo {
     display: grid;
-    /* this was change */
-    /* grid-template-columns: 1fr 10px 10rem 1fr; */
     grid-template-columns: 1fr 5rem;
     grid-template-rows: 1fr 1fr;
     align-content: center;
     height: 80%;
 }
 .rotate {
-    /* this was change */
     animation: rotate 1s;
 }
 
-/* this was added */
 #doggo.scale {
-    scale: 1;
+    transform: scale(1);
 }
 #doggo {
-    /* this was change */
     grid-column: 3/4;
     grid-row: 2/-2;
     width: 200px;
     cursor: pointer;
-    scale: 0.5;
-    /* this was added */
+    transform: scale(0.5);
     transition: all 1s ease-in-out;
 }
 
@@ -361,18 +353,8 @@ footer p {
     }
 }
 
-/* this was added */
-@keyframes scale {
-    from {
-        scale: 0.5;
-    }
-    to {
-        scale: 1;
-    }
-}
-
 .section {
-    margin-top: 5rem;
+    padding-top: 4rem;
 }
 
 .accessibility-svg {
@@ -409,6 +391,7 @@ iframe {
     }
     .section {
         margin-top: 8rem;
+        padding-top: 0;
     }
     .svg-intro {
         margin-top: 4rem;
@@ -430,7 +413,7 @@ iframe {
     }
     #doggo {
         margin: 0 2rem;
-        scale: 0.7;
+        transform: scale(0.7);
     }
     #box {
         width: 20rem;
