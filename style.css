@@ -8,6 +8,9 @@
 /* ------------------general styles----------------- */
 
 /* -------------------------Elements---------------------- */
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: "Mulish", sans-serif;
     line-height: 1.5;
@@ -19,7 +22,6 @@ body {
 h1 {
     font-size: 1.5rem;
     text-align: center;
-    margin-bottom: 3rem;
 }
 
 h2 {
@@ -112,6 +114,7 @@ footer p {
         font-size: 2.5rem;
         font-weight: 600;
         margin-top: 2rem;
+        margin-bottom: 3rem;
     }
     h2 {
         font-size: 2rem;
@@ -269,8 +272,10 @@ footer p {
 }
 
 /* ---------------------main----------------- */ /* -----------------------SVG Usages Section------------ */
+
 #box {
-    width: 300px;
+    grid-column: 2/3;
+    width: 7rem;
     height: fit-content;
     background: #00356b;
     padding: 20px;
@@ -280,7 +285,6 @@ footer p {
     position: relative;
     display: none;
 }
-
 #box::after {
     content: "";
     position: absolute;
@@ -309,14 +313,31 @@ footer p {
     fill: #00356b;
 }
 
-#transform-box {
+.transform-box {
     fill: #00356b;
 }
 
+.interactive-doggo {
+    display: grid;
+    grid-template-columns: 1fr 5rem;
+    grid-template-rows: 1fr 1fr;
+    align-content: center;
+    height: 80%;
+}
+.rotate {
+    animation: rotate 1s;
+}
+
+#doggo.scale {
+    transform: scale(1);
+}
 #doggo {
-    width: 250px;
+    grid-column: 3/4;
+    grid-row: 2/-2;
+    width: 200px;
     cursor: pointer;
-    margin: 0;
+    transform: scale(0.5);
+    transition: all 1s ease-in-out;
 }
 
 .rotate {
@@ -333,7 +354,18 @@ footer p {
 }
 
 .section {
-    margin-top: 5rem;
+    padding-top: 4rem;
+}
+
+.accessibility-svg {
+    margin: 0 auto 2rem;
+    display: block;
+    width: 8rem;
+    height: 8rem;
+}
+iframe {
+    display: block;
+    margin: 0 auto 2rem;
 }
 
 .back-to-top-btn {
@@ -353,8 +385,13 @@ footer p {
 }
 
 @media (min-width: 46.8em) {
+    .main-wrapper {
+        margin: 0 auto;
+        width: 85%;
+    }
     .section {
         margin-top: 8rem;
+        padding-top: 0;
     }
     .svg-intro {
         margin-top: 4rem;
@@ -365,8 +402,21 @@ footer p {
     .advantages h3 {
         margin-top: 2rem;
     }
+
+    .interactive-doggo {
+        grid-template-columns: 1fr 100px 20rem 1fr;
+    }
+    .accessibility-svg {
+        margin: 2rem auto;
+        width: 12rem;
+        height: 12rem;
+    }
     #doggo {
-        margin: 0 15rem;
+        margin: 0 2rem;
+        transform: scale(0.7);
+    }
+    #box {
+        width: 20rem;
     }
     #section-doggo ul {
         font-size: 1.2rem;
