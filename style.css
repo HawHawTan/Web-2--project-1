@@ -313,7 +313,7 @@ footer p {
     fill: #00356b;
 }
 
-#transform-box {
+.transform-box {
     fill: #00356b;
 }
 
@@ -329,14 +329,14 @@ footer p {
 }
 
 #doggo.scale {
-    scale: 1;
+    transform: scale(1);
 }
 #doggo {
     grid-column: 3/4;
     grid-row: 2/-2;
     width: 200px;
     cursor: pointer;
-    scale: 0.5;
+    transform: scale(0.5);
     transition: all 1s ease-in-out;
 }
 
@@ -350,15 +350,6 @@ footer p {
     }
     to {
         transform: rotate(360deg);
-    }
-}
-
-@keyframes scale {
-    from {
-        scale: 0.5;
-    }
-    to {
-        scale: 1;
     }
 }
 
@@ -422,7 +413,7 @@ iframe {
     }
     #doggo {
         margin: 0 2rem;
-        scale: 0.7;
+        transform: scale(0.7);
     }
     #box {
         width: 20rem;
